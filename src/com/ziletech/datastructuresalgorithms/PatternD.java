@@ -1,0 +1,26 @@
+package com.ziletech.datastructuresalgorithms;
+
+public class PatternD {
+    public void printD(int num) {
+        for (int i = 0; i < num; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print(" ");
+            }
+            for (int j = num; j > i; j--) {
+                System.out.print("* ");
+            }
+            System.out.println();
+
+        }
+        for (int i = 1; i <=num; i++) {
+            for (int j = num; j > i; j--) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+    }
+}
