@@ -4,6 +4,9 @@ package com.ziletech.datastructuresalgorithms;
 public class PatternB {
 
     public static void main(String[] args) {
+        printDiamond(6);
+        printTopTriangle(6);
+        printBottomTriangle(6);
 //        char c = (char) 97;
 //        System.out.println(c);
 //
@@ -24,7 +27,7 @@ public class PatternB {
 //        printBottomTriangle(num);
     }
 
-    private void printDiamond(int num) {
+    private static void printDiamond(int num) {
 
         for (int row = 0; row < num; row++) {
 
@@ -48,7 +51,7 @@ public class PatternB {
         }
     }
 
-    private void printTopTriangle(int num) {
+    private static void printTopTriangle(int num) {
         for (int i = 0; i < num; i++) {
             for (int j = num; j > i; j--) {
                 System.out.print(" ");
@@ -60,7 +63,7 @@ public class PatternB {
         }
     }
 
-    private void printBottomTriangle(int num) {
+    private static void printBottomTriangle(int num) {
         for (int i = 0; i < num; i++) {
             for (int j = 0; j < i; j++) {
                 System.out.print(" ");

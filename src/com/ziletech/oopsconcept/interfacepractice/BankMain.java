@@ -10,7 +10,6 @@ public class BankMain {
         Bank pnb = new PNB();
         System.out.println(pnb.interest());
 
-
         List<String> list = new ArrayList<>();
         list.add("SBI");
         list.add("IDFC");
@@ -46,20 +45,16 @@ public class BankMain {
         }
         System.out.println("----------");
 
-
         Set<Integer> numbers = new HashSet<>();
         numbers.add(12);
         numbers.add(89);
         numbers.add(12);
         numbers.add(54);
 
-
         for (Integer num : numbers) {
             System.out.println(num);
         }
         System.out.println("----------");
-
-
 
         Set<String> names = new LinkedHashSet<>();
         names.add("Mitali");
@@ -73,7 +68,6 @@ public class BankMain {
             System.out.println(name);
         }
 
-
         Set<String> nm = new TreeSet<>();
 
         nm.add("Mitali");
@@ -86,14 +80,8 @@ public class BankMain {
         for (String name :nm ){
             System.out.println(name);
         }
-
-
-
     }
-
-
 }
-
 
 class SBI implements Bank {
 

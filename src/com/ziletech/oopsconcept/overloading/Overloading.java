@@ -22,11 +22,6 @@ public class Overloading {
         test.a(1, 4, 4);
 
 
-      p a = new p();
-      Animal animal = new Animal();
-
-
-
     }
 
 }
@@ -69,31 +64,13 @@ class Test {
         System.out.println(o + "object type");
     }
 
-    //    public void a(StringBuffer sb){
-//        System.out.println(sb +"stringbuffer");
+    //     public void a(StringBuffer sb){
+//        System.out.println(sb +"string buffer");
 //    }
     public void a(int... i) {
         System.out.println(Arrays.toString(i));
     }
 }
 
-class Animal {
 
-
-}
-
-class Monkey extends Animal {
-
-
-}
-
-class p {
-    public void a(Animal n) {
-        System.out.println("animal");
-    }
-
-    public void m(Monkey o) {
-        System.out.println();
-    }
-}
 
